@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .product {
+        max-width: 250px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 25px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+        overflow: hidden;
+    }
+    .product .logo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .product .logo img {
+        width: 25px;
+        height: 25px;
+    }
+    .product .shot-img {
+        width: 100%;
+        height: 180px;
+        position: relative;
+        border: 1px solid red;
+        
+    }
+    .product .shot-img img {
+        width: 80%;
+        /* object-fit: cover; */
+        position: absolute;
+        top: -20%;
+        left: 6%;
+        transform: rotate(-18deg);
+        z-index: -2;
+        
+    }
+    .product .detail {
+        position: relative;
+    }
+    .product .detail p {
+        font-size: 14px;
+    }
+    .product .detail .star{
+        display: flex;
+    }
+    .product .detail .star img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+    .product .detail .btn {
+        width: 120px;
+        height: 35px;
+        background-color: #00a8ff;
+        border-radius: 17px;
+        text-align: center;
+        line-height: 35px;
+        position: relative;
+        color: white;
+       font-size: 14px;
+       cursor: pointer;
+        left: 50%;
+    }
+   
+    
+</style>
+<body>
+    <div class="product">
+        <div class="logo">
+            <img src="../../assets/img/base/logo.png" alt="">
+            <img src="../../assets/img/base/cart.png" alt="">
+        </div>
+        <div class="shot-img">
+            <img src="../../assets/img/home/nike_top.jpg" alt="">
+        </div>
+        <div class="detail">
+            <h3>name</h3>
+            <p>类型:男子运动鞋</p>
+            <p>价格:</p>
+            <div class="star">
+                <img src="../../assets/img/base/score.png" alt="">
+                <img src="../../assets/img/base/score.png" alt="">
+                <img src="../../assets/img/base/score.png" alt="">
+                <img src="../../assets/img/base/score.png" alt="">
+                
+            </div>
+            <div class="btn">
+               了解详情
+            </div>
+        </div>
+    </div>
+</body>
+</html>

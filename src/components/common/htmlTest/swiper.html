@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cartItem {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        width: 52%;
+        min-width: 500px;
+        padding: 20px;
+        border: 1px solid rebeccapurple;
+    }
+    .cartItem .image {
+        width: 120px;
+        height: 120px;
+        border: 1px solid red;
+        margin-right: 20px;
+    }
+    .cartItem .shotDetail {
+       color: #7f8c8d;
+       font-size: 16px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+    }
+    .cartItem .shotDetail h3 {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        border: 1px solid red;
+        padding: 0;
+        margin: 0;
+
+    }
+    .cartItem .shotDetail p {
+        margin: 0;
+    }
+    .cartItem .shotDetail .c-price {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .cartItem .shotDetail .c-delete {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .pay {
+        width: 40%;
+        border: 1px solid red;
+        padding: 20px;
+    }
+    .pay div {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .pay .b-line {
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid #7f8c8d;
+        border-top: 1px solid #7f8c8d;
+    }
+    .pay .balance {
+        width: 180px;
+        height: 20px;
+        margin: 20px auto;
+        border-radius: 30px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    .pay .balance span {
+        width: 100%;
+    }
+
+    
+
+</style>
+<body>
+    <div class="cartItem">
+        <div class="image">
+            
+        </div>
+        <div class="shotDetail">
+            <h3>name</h3>
+            <p>type</p>
+            <div class="san">
+                <span>尺码：</span><span>数量</span>
+            </div>
+            <span class="c-price">￥999</span><span class="c-delete">删除</span>
+        </div>
+    </div>
+
+    <div class="pay">
+        
+        <div>
+            <sapn>小计</sapn>
+            <sapn>￥999</sapn>
+        </div>
+        <div>
+            <sapn>预计运费和手续费</sapn>
+            <sapn>￥0</sapn>
+        </div>
+        <div class="b-line">
+            <sapn>总计</sapn>
+            <span>￥999</span>
+        </div>
+        <div class="balance">
+          <span>结算</span>
+        </div>
+        
+    </div>
+</body>
+</html>
